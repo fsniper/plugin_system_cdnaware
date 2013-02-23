@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+        <name>System - CDNAware</name>
+        <copyright>Copyright (C) 2008 Holder. All rights reserved.</copyright>
+        <license>GNU General Public License</license>
+        <author>Mobilada.com</author>
+        <authorEmail>info@mobilada.com</authorEmail>
+        <authorUrl>http://www.mobilada.com</authorUrl>
+        <creationDate>August 2009</creationDate>
+        <version>1.0.1</version>
+        <description>CDN Aware url rewriting for Joomla! based sites</description>
+        <files>
+                <filename plugin="cdnaware">cdnaware.php</filename>
+        </files>
+        <params>
+                <param 
+                  name="cdn"
+                  type="text"
+                  default="http://cdn1,https://cdn2,http://cdn3"
+                  label="CDNs Urls"
+                  description="CDNs urls (comma seperated list)" 
+                />
+                <param 
+                  name="domains"
+                  type="text"
+                  default="domain1,domain2"
+                  label="Domains to be substituted"
+                  description="Your sites domains that has files to be served from cdns (comma seperated list)" 
+                />
+                <param 
+                  name="extensions"
+                  type="text"
+                  default="jpg,png,gif,js,css"
+                  label="Extensions to be substituted"
+                  description="Extension of files to be served from cdns (comma seperated list)" 
+                />
+        </params>
+</install>
